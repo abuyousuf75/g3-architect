@@ -34,10 +34,12 @@ a{
     max-width: 1140px;
     margin: 0 auto;
 }
+
 .nav-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
 }
 .nav-content ul {
     display: flex;
@@ -120,6 +122,90 @@ a{
     color:#FF900E;
 }
 
+/*===============Fetures css start bellow=================== */
+#feturaes{
+    padding: 30px 0px;
+}
+.fetures-text{
+    font-size: 30px;
+    font-weight: 500;
+}
+.fetar-text{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 20px 0px;
+}
+.fetures-main{
+    display: flex;
+    justify-content: space-between;
+}
+.fetures-img {
+    padding: 0px 60px;
+    width: 100%;
+    position: relative;
+}
+.year-text{
+    width: 342px;
+    height: 200px;
+    background: #FF900E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    position: absolute;
+    margin: -68px -24px;
+    flex-direction: column;
+
+}
+.year-text h2{
+    color: #FFF;
+font-size: 65px;
+
+font-weight: 700;
+line-height: 70px; 
+}
+.year-text h4{
+    color: #FFF;
+}
+.fetures-img img{
+    width: 100%;
+}
+.fetures-text{
+    position: relative;
+    padding-left: 20px;
+}
+.fetures-text h3::after{
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 5px;
+    height: 50px;
+    background-color: #FF900E;
+}
+
+
+.card-inner-text{
+    padding: 40px 25px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+
+.card-inner-text h4{
+    color:  #131313;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.card-inner-text p{
+    color:  #727272;
+    font-size: 16px;
+    font-weight: 400;
+
+}
 /*===============Responsive css start bellow=================== */
 /*===============Mobile css start bellow=================== */
 @media screen and (max-width:576px) {
@@ -152,6 +238,23 @@ a{
         display: flex;
         gap: 1.5rem;
     }
+    .fetures-main {
+        display: block;
+    }
+    .fetures-text h3::after {
+        left: 8px;
+    }
+    .year-text{
+        width: 150px;
+        height: 150px;
+    }
+    .year-text h2{
+        font-size: 25px;
+    }
+    .year-text h4{
+        font-size: 14px;
+    }
+
 }
 
 /*===============Medium  Device css start bellow=================== */
@@ -166,9 +269,15 @@ a{
     .nav-content ul li {
         margin: 10px 50px;
     }
+    .fetures-main {
+       
+        flex-direction: column;
+       
+       
+    }
 
 }
 
 
-/*===============Common css start bellow=================== */
+
 /*===============Common css start bellow=================== */
