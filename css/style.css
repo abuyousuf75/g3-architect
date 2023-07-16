@@ -349,6 +349,17 @@ line-height: 70px;
     .sponser-img-main{
         justify-content: center;
     }
+    .fact-text p {
+        width: auto;
+        text-align: center;
+        font-size: 16px;
+        padding: 0px 20px;
+       
+    }
+    .fact-text h2 {
+        text-align: center;
+        font-size: 25px;
+    }
 }
 
 /*===============Medium  Device css start bellow=================== */
